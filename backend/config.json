@@ -18,6 +18,9 @@
         "posts": {
             "port": 10003
         },
+        "cars": {
+            "port": 10004
+        },
         "proxy": {
             "port": 3000
         }

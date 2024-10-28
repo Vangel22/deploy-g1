@@ -34,6 +34,15 @@ app.use(
   })
 );
 
+// localhost -> 127.0.0.1
+
+app.use(
+  "/api/cars",
+  proxy("http://127.0.0.1:10004", {
+    proxyReqPathResolver: (req) => `http://127.0.0.1:10004/api/cars${req.url}`,
+  })
+);
+
 const PORT = process.env.PORT || config.getSection("services").proxy.port;
 
 app.listen(PORT, (err) => {
