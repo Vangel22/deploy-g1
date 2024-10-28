@@ -1,0 +1,4 @@
+- Napravete go cars handlerot da funkcionira
+
+*Bonus -> vovedete Multitenancy
+Hint: Gledajte go posts handlerot
